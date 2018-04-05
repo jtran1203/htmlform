@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>form Dem0</title>
+</head>
+<body>
+  <h2>Register</h2>
+<!-- action- where the form send data to
+method what HTTP method (get/post>) -->
+
+<form>
+  <label for="firstName">First Name: </label>
+  <input id="firstName" name="firstName" type="text" placeholder="firstName" required>
+  <label for="lastName">Last Name: </label>
+  <input id="Lastname" name="LastName" type="text" placeholder="LastName" required>
+
+<div>
+  <label for="male">Male</label>
+  <input name="Gender" id="male" type="radio" value="Male">
+  <label for="female">Female</label>
+  <input name="Gender" id="female" type="radio" value="Female">
+  <label for="other">Other</label>
+  <input name="Gender" id="Other" type="radio" value="Other">
+</div>
+
+<div>
+  <label for="email">Email:</label>
+  <input id="email" name="email" type="email" placeholder="email" required>
+  <label for="password">Password:</label>
+  <input id="password" name="password" type="password" placeholder="password" required minlength="4"
+       maxlength="8">
+</div>
+
+<div>
+  <label>Birthday:
+    <select name="Month">
+      <option>Month</option>
+      <option >February</option>
+      <option>March</option>
+      <option>April</option>
+    </select>
+
+    <select name="Day">
+      <option>Day</option>
+      <option >1</option>
+      <option >2</option>
+      <option >3</option>
+    </select>
+
+    <select name="year">
+      <option> Year</option>
+      <option >1992</option>
+      <option >1991</option>
+      <option >1990</option>
+    </select>
+  </label>
+</div>
+
+<div>
+  <label for="checkbox">I agree to the terms and conditions</label>
+  <input id="checkbox" name="checkbox" type="radio">
+</div>
+
+<button>Submit</buton>
+</form>
+</body>
+</html>
